@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PageScout — Find Your Next Great Read</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand"><span>Page</span>Scout</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="compare.html">Compare</a>
+      <a href="recommendations.html">SmartMatch</a>
+      <a href="alerts.html">Price Alerts</a>
+    </nav>
+    <a href="explore.html" class="nav-search">⌕</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">THE SMARTER WAY TO BUY BOOKS</span>
+        <h1>Find your next<br><em>great read.</em></h1>
+        <p>Compare prices, discover books tailored to your interests, and track prices so you never miss a deal.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="explore.html">Explore books <span>→</span></a>
+          <a class="btn btn-secondary" href="recommendations.html">Get recommendations</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="book-stack">
+          <div class="floating-card card-top">★ 4.6 <span>Reader rating</span></div>
+          <div class="cover-placeholder hero-cover">
+            <img src="images/atomic-habits.jpg" alt="Atomic Habits cover">
+          </div>
+          <div class="floating-card card-bottom"><strong>₹470</strong><span>Best current price</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-banner">
+      <div>
+        <span class="eyebrow">SEARCH THE COLLECTION</span>
+        <h2>What are you looking for?</h2>
+      </div>
+      <form class="home-search" id="homeSearch">
+        <input id="homeSearchInput" type="text" placeholder="Search by title, author or genre..." autocomplete="off">
+        <button class="btn btn-primary" type="submit">Search <span>→</span></button>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">POPULAR RIGHT NOW</span>
+          <h2>Trending books</h2>
+        </div>
+        <a href="explore.html" class="text-link">View all books →</a>
+      </div>
+      <div class="book-grid" id="trendingBooks"></div>
+    </section>
+
+    <section class="feature-section">
+      <div class="section-heading centered">
+        <span class="eyebrow">WHY PAGESCOUT?</span>
+        <h2>Everything you need to buy smarter.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">⌕</div>
+          <h3>Smart Search</h3>
+          <p>Find books quickly by title, author, genre, tags or reading style.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">₹</div>
+          <h3>Price Comparison</h3>
+          <p>Compare sample prices across multiple online bookstores in one place.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">✦</div>
+          <h3>SmartMatch</h3>
+          <p>Get personalized recommendations based on your selected interests.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">⌁</div>
+          <h3>Price Tracking</h3>
+          <p>Set a target price and keep track of books you want to buy later.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span>Page</span>Scout</div>
+    <p>Book discovery & price comparison prototype.</p>
+
+    <p style="margin-left: 142px;">&copy; RV College of Engineering</p>
+
+    <p class="demo-note">
+      Mohammad Farhan Aziz <br>
+      Nandyala Yuvasai Narasimha Reddy <br>
+      Pillala Yogesh <br>
+      Gurnoor
+    </p>
+  </footer>
+
+  <script src="js/books.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
