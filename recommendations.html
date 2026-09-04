@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartMatch — PageScout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand"><span>Page</span>Scout</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="compare.html">Compare</a>
+      <a href="recommendations.html" class="active">SmartMatch</a>
+      <a href="alerts.html">Price Alerts</a>
+    </nav>
+    <a href="explore.html" class="nav-search">⌕</a>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-header">
+      <span class="eyebrow">PERSONALIZED DISCOVERY</span>
+      <h1>Meet SmartMatch<span class="accent">.</span></h1>
+      <p>Tell us what you enjoy and our recommendation engine will find your best matches.</p>
+    </section>
+
+    <section class="smartmatch-layout">
+      <div class="preference-panel">
+        <div class="panel-title">
+          <span class="step">01</span>
+          <div><h2>Choose your genres</h2><p>Select everything that sounds interesting.</p></div>
+        </div>
+        <div class="chip-grid" id="genreChips"></div>
+
+        <div class="panel-title second">
+          <span class="step">02</span>
+          <div><h2>Pick your reading style</h2><p>What kind of experience are you after?</p></div>
+        </div>
+        <div class="chip-grid" id="styleChips"></div>
+
+        <button class="btn btn-primary full-btn" id="recommendBtn">✦ Generate my recommendations</button>
+      </div>
+
+      <aside class="algorithm-card">
+        <div class="algorithm-icon">✦</div>
+        <span class="eyebrow">HOW IT WORKS</span>
+        <h3>Content-based matching</h3>
+        <p>SmartMatch compares your selected preferences with each book's genres, tags, themes and reader rating.</p>
+        <div class="score-row"><span>Genre match</span><strong>40%</strong></div>
+        <div class="score-row"><span>Reading style</span><strong>30%</strong></div>
+        <div class="score-row"><span>Book rating</span><strong>20%</strong></div>
+        <div class="score-row"><span>Tag similarity</span><strong>10%</strong></div>
+        <small>Prototype recommendation algorithm — no external AI API required.</small>
+      </aside>
+    </section>
+
+    <section class="recommendation-results hidden" id="recommendationResults">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">YOUR RESULTS</span>
+          <h2>Books picked for you</h2>
+        </div>
+        <span class="demo-pill" id="matchSummary"></span>
+      </div>
+      <div class="recommendation-grid" id="recommendationGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span>Page</span>Scout</div>
+    <p>Book discovery & price comparison prototype.</p>
+
+    <p style="margin-left: 142px;">&copy; RV College of Engineering</p>
+
+    <p class="demo-note">
+      Mohammad Farhan Aziz <br>
+      Nandyala Yuvasai Narasimha Reddy <br>
+      Pillala Yogesh <br>
+      Gurnoor
+    </p>
+  </footer>
+
+  <script src="js/books.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/recommendations.js"></script>
+</body>
+</html>
